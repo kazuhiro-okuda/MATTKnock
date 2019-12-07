@@ -20,7 +20,7 @@ function setAuth() {
   })
 }
 
-async function setData(data) {
+module.exports = async function setData(data) {
   const res = await setAuth()
   console.log(res);
   const { current_time, name, status, working_time } = data
